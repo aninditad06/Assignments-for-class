@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int rollNumber = 100;
+    if(rollNumber == 100)
+        printf("Roll Number 100 is present\n");
+    else
+        printf("Roll Number 100 is not present\n");
+    return 0;
+}
