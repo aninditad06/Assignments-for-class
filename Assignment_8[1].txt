@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    char choice;
+    float celsius, fahrenheit;
+    printf("Choose conversion (C to F = c, F to C = f): ");
+    scanf(" %c", &choice);
+    if(choice == 'c') {
+        printf("Enter temperature in Celsius: ");
+        scanf("%f", &celsius);
+        fahrenheit = (celsius * 9 / 5) + 32;
+        printf("Temperature in Fahrenheit = %.2f\n", fahrenheit);
+    } else if(choice == 'f') {
+        printf("Enter temperature in Fahrenheit: ");
+        scanf("%f", &fahrenheit);
+        celsius = (fahrenheit - 32) * 5 / 9;
+        printf("Temperature in Celsius = %.2f\n", celsius);
+    } else {
+        printf("Invalid choice\n");
+    }
+    return 0;
+}
