@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    // Using modulus operator
+    int lastDigit = num % 10;
+    printf("Last digit using modulus operator: %d\n", lastDigit);
+    // Without modulus operator
+    int lastDigitWithoutMod = num - (num / 10) * 10;
+    printf("Last digit without modulus operator: %d\n", lastDigitWithoutMod);
+    return 0;
+}
