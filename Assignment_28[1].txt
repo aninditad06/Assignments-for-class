@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int grade;
+    printf("Enter basic salary grade (1-3): ");
+    scanf("%d", &grade);
+    float salary;
+    switch(grade) {
+        case 1: salary = 5000; break;
+        case 2: salary = 10000; break;
+        case 3: salary = 15000; break;
+        default: salary = 0; break;
+    }
+    printf("Total salary = %.2f\n", salary);
+    return 0;
+}
