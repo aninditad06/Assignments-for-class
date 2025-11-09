@@ -1,0 +1,5 @@
+Algorithm to find ASCII value of a character:
+- Start
+- Read a character ch
+- Display ASCII value of ch
+- End

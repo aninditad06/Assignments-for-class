@@ -1,0 +1,6 @@
+Algorithm to calculate Area of Circle:
+- Start
+- Read radius r
+- Calculate area = π * r * r (π approximately 3.14159)
+- Display area
+- End
