@@ -1,0 +1,8 @@
+Algorithm to find sum of first n natural numbers:
+- Start
+- Read n
+- Initialize sum = 0
+- For i = 1 to n:
+• sum = sum + i
+- Display sum
+- End

@@ -1,0 +1,7 @@
+Algorithm to display sizes of data types:
+- Start
+- Display size of int
+- Display size of float
+- Display size of double
+- Display size of char
+- End
