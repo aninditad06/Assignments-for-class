@@ -1,0 +1,6 @@
+Algorithm to calculate Compound Interest:
+- Start
+- Read Principal (P), Rate (R), Time (T)
+- Calculate CI = P * (1 + R/100)^T - P
+- Display CI
+- End

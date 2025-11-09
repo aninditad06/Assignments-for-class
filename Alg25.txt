@@ -1,0 +1,9 @@
+Algorithm to determine salary by grade:
+- Start
+- Read grade (1 to 3)
+- If grade == 1, salary = 5000
+- Else if grade == 2, salary = 10000
+- Else if grade == 3, salary = 15000
+- Else salary = 0
+- Display salary
+- End
