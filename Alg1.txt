@@ -1,0 +1,6 @@
+Algorithm to print "Adamas University":
+
+Start
+Initialize the program
+Output the string "Adamas University" to the console
+End
