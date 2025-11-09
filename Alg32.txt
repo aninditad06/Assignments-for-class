@@ -1,0 +1,9 @@
+Algorithm to print multiplication table of a number recursively:
+- Start
+- Read number num
+- Define recursive function printTable(num, i):
+• If i > 10, return
+• Print “num x i = num*i”
+• Call printTable(num, i+1)
+- Call printTable(num, 1)
+- End
