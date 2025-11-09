@@ -1,0 +1,10 @@
+Algorithm to find prime numbers in a given range:
+- Start
+- Read start and end values
+- For i = start to end:
+• If i < 2, continue to next i
+• Initialize isPrime = true
+• For j = 2 to i/2:
+- If i % j == 0, set isPrime = false, break inner loop
+• If isPrime == true, print i
+- End
