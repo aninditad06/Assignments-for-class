@@ -1,0 +1,10 @@
+Algorithm to find the difference between two numbers:
+
+Start
+Prompt the user to enter the first number (num1)
+Read num1
+Prompt the user to enter the second number (num2)
+Read num2
+Calculate difference = num1 - num2
+Display the difference
+End
