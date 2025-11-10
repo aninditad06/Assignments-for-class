@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+int main() {
+    char str1[100], str2[100], result[200];
+    int i, j, choice, length = 0, flag = 0;
+
+    printf("Enter first string: ");
+    gets(str1);
+    printf("Enter second string: ");
+    gets(str2);
+
+    printf("\n--- STRING OPERATIONS MENU ---\n");
+    printf("1. Find Length of String\n");
+    printf("2. Copy One String to Another\n");
+    printf("3. Compare Two Strings\n");
+    printf("4. Concatenate Two Strings\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1:
+            // Find length of str1
+            for (i = 0; str1[i] != '\0'; i++);
+            printf("Length of first string = %d\n", i);
+            for (j = 0; str2[j] != '\0'; j++);
+            printf("Length of second string = %d\n", j);
+            break;
+
+        case 2:
+            // Copy str1 to result
+            for (i = 0; str1[i] != '\0'; i++) {
+                result[i] = str1[i];
+            }
+            result[i] = '\0';
+            printf("Copied string = %s\n", result);
+            break;
+
+        case 3:
+            // Compare str1 and str2
+            for (i = 0; str1[i] != '\0' || str2[i] != '\0'; i++) {
+                if (str1[i] != str2[i]) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0)
+                printf("Strings are Equal\n");
+            else
+                printf("Strings are Not Equal\n");
+            break;
+
+        case 4:
+            // Concatenate str1 and str2
+            for (i = 0; str1[i] != '\0'; i++)
+                result[i] = str1[i];
+            for (j = 0; str2[j] != '\0'; j++, i++)
+                result[i] = str2[j];
+            result[i] = '\0';
+            printf("Concatenated string = %s\n", result);
+            break;
+
+        default:
+            printf("Invalid choice!\n");
+    }
+
+    return 0;
+}
